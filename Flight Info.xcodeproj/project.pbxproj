@@ -32,6 +32,16 @@
 		4F5C9BE921D542E5006F53D2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BE821D542E5006F53D2 /* ActivityIndicator.swift */; };
 		4F5C9BEB21D54A66006F53D2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BEA21D54A66006F53D2 /* Colors.swift */; };
 		4F5C9BED21D56232006F53D2 /* MapVC+MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BEC21D56232006F53D2 /* MapVC+MapDelegate.swift */; };
+		4F5C9BEF21D7B0EE006F53D2 /* FSFlightTrackResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BEE21D7B0EE006F53D2 /* FSFlightTrackResponse.swift */; };
+		4F5C9BF121D7B31D006F53D2 /* FlightTrackDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BF021D7B31D006F53D2 /* FlightTrackDataSource.swift */; };
+		4F5C9BF321D7B53A006F53D2 /* FlightTrackCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BF221D7B53A006F53D2 /* FlightTrackCache.swift */; };
+		4F5C9BF521D7B632006F53D2 /* FlightTrackRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BF421D7B632006F53D2 /* FlightTrackRepository.swift */; };
+		4F5C9BF721D7B8B2006F53D2 /* FlightTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BF621D7B8B2006F53D2 /* FlightTrack.swift */; };
+		4F5C9BF921D7B9B6006F53D2 /* GetFlightTrackUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BF821D7B9B6006F53D2 /* GetFlightTrackUseCase.swift */; };
+		4F5C9BFB21D7BC10006F53D2 /* FlightTrackMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BFA21D7BC10006F53D2 /* FlightTrackMapper.swift */; };
+		4F5C9BFD21D7DE9C006F53D2 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BFC21D7DE9C006F53D2 /* DetailsVC.swift */; };
+		4F5C9C0021D7DEC2006F53D2 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BFF21D7DEC2006F53D2 /* DetailsViewModel.swift */; };
+		4F5C9C0221D7DED7006F53D2 /* DetailsViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +71,16 @@
 		4F5C9BE821D542E5006F53D2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		4F5C9BEA21D54A66006F53D2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4F5C9BEC21D56232006F53D2 /* MapVC+MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapDelegate.swift"; sourceTree = "<group>"; };
+		4F5C9BEE21D7B0EE006F53D2 /* FSFlightTrackResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSFlightTrackResponse.swift; sourceTree = "<group>"; };
+		4F5C9BF021D7B31D006F53D2 /* FlightTrackDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTrackDataSource.swift; sourceTree = "<group>"; };
+		4F5C9BF221D7B53A006F53D2 /* FlightTrackCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTrackCache.swift; sourceTree = "<group>"; };
+		4F5C9BF421D7B632006F53D2 /* FlightTrackRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTrackRepository.swift; sourceTree = "<group>"; };
+		4F5C9BF621D7B8B2006F53D2 /* FlightTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTrack.swift; sourceTree = "<group>"; };
+		4F5C9BF821D7B9B6006F53D2 /* GetFlightTrackUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlightTrackUseCase.swift; sourceTree = "<group>"; };
+		4F5C9BFA21D7BC10006F53D2 /* FlightTrackMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTrackMapper.swift; sourceTree = "<group>"; };
+		4F5C9BFC21D7DE9C006F53D2 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		4F5C9BFF21D7DEC2006F53D2 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewState.swift; sourceTree = "<group>"; };
 		55A18236EE048A35C2447143 /* Pods-Flight Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Info.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flight Info/Pods-Flight Info.debug.xcconfig"; sourceTree = "<group>"; };
 		602836116C1DE8BAC441AE6E /* Pods-Flight Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Info.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flight Info/Pods-Flight Info.release.xcconfig"; sourceTree = "<group>"; };
 		DA844A8B84CEC5B330D02E8B /* Pods_Flight_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flight_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5C9BC221D444A7006F53D2 /* FlightsNearDataSource.swift */,
+				4F5C9BF021D7B31D006F53D2 /* FlightTrackDataSource.swift */,
 			);
 			path = "Data Sources";
 			sourceTree = "<group>";
@@ -161,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5C9BC521D44D4F006F53D2 /* FSNearFlightsResponse.swift */,
+				4F5C9BEE21D7B0EE006F53D2 /* FSFlightTrackResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -190,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5C9BCC21D4D83F006F53D2 /* GetFlightsNearUseCase.swift */,
+				4F5C9BF821D7B9B6006F53D2 /* GetFlightTrackUseCase.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -198,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5C9BCF21D4D93D006F53D2 /* FlightsNearRepository.swift */,
+				4F5C9BF421D7B632006F53D2 /* FlightTrackRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -206,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5C9BD221D4D9E3006F53D2 /* FlightsNearCache.swift */,
+				4F5C9BF221D7B53A006F53D2 /* FlightTrackCache.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -214,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5C9BD521D4ECEA006F53D2 /* NearFlight.swift */,
+				4F5C9BF621D7B8B2006F53D2 /* FlightTrack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				4F5C9BD821D4EF5C006F53D2 /* FlightNearbyMapper.swift */,
+				4F5C9BFA21D7BC10006F53D2 /* FlightTrackMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -229,6 +256,7 @@
 		4F5C9BDA21D5370A006F53D2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4F5C9BFE21D7DEA2006F53D2 /* Details */,
 				4F5C9BE321D54250006F53D2 /* Utils */,
 				4F5C9BDB21D53720006F53D2 /* Map */,
 			);
@@ -262,6 +290,16 @@
 				4F5C9BEA21D54A66006F53D2 /* Colors.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4F5C9BFE21D7DEA2006F53D2 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4F5C9BFC21D7DE9C006F53D2 /* DetailsVC.swift */,
+				4F5C9BFF21D7DEC2006F53D2 /* DetailsViewModel.swift */,
+				4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		ADB1E581A8206B85B4E50511 /* Pods */ = {
@@ -391,23 +429,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5C9BF921D7B9B6006F53D2 /* GetFlightTrackUseCase.swift in Sources */,
 				4F5C9BC621D44D4F006F53D2 /* FSNearFlightsResponse.swift in Sources */,
+				4F5C9BFB21D7BC10006F53D2 /* FlightTrackMapper.swift in Sources */,
+				4F5C9BF721D7B8B2006F53D2 /* FlightTrack.swift in Sources */,
 				4F5C9BEB21D54A66006F53D2 /* Colors.swift in Sources */,
+				4F5C9BF521D7B632006F53D2 /* FlightTrackRepository.swift in Sources */,
 				4F5C9BBA21D2629A006F53D2 /* FSClientConstants.swift in Sources */,
+				4F5C9BF121D7B31D006F53D2 /* FlightTrackDataSource.swift in Sources */,
 				4F5C9BE921D542E5006F53D2 /* ActivityIndicator.swift in Sources */,
 				4F5C9BA721D14A16006F53D2 /* MapVC.swift in Sources */,
 				4F5C9BA521D14A16006F53D2 /* AppDelegate.swift in Sources */,
 				4F5C9BBE21D43D0C006F53D2 /* FlightsNearRequest.swift in Sources */,
+				4F5C9BF321D7B53A006F53D2 /* FlightTrackCache.swift in Sources */,
 				4F5C9BE521D54260006F53D2 /* AlertPresenter.swift in Sources */,
+				4F5C9C0221D7DED7006F53D2 /* DetailsViewState.swift in Sources */,
 				4F5C9BC321D444A7006F53D2 /* FlightsNearDataSource.swift in Sources */,
 				4F5C9BBC21D43CE0006F53D2 /* RequestUtils.swift in Sources */,
 				4F5C9BDF21D537AD006F53D2 /* MapViewState.swift in Sources */,
+				4F5C9C0021D7DEC2006F53D2 /* DetailsViewModel.swift in Sources */,
+				4F5C9BEF21D7B0EE006F53D2 /* FSFlightTrackResponse.swift in Sources */,
 				4F5C9BED21D56232006F53D2 /* MapVC+MapDelegate.swift in Sources */,
 				4F5C9BC021D43D22006F53D2 /* FlightTrackRequest.swift in Sources */,
 				4F5C9BD321D4D9E3006F53D2 /* FlightsNearCache.swift in Sources */,
 				4F5C9BE221D53A79006F53D2 /* StringUtils.swift in Sources */,
 				4F5C9BC921D45232006F53D2 /* ObservableType+Map.swift in Sources */,
 				4F5C9BCD21D4D83F006F53D2 /* GetFlightsNearUseCase.swift in Sources */,
+				4F5C9BFD21D7DE9C006F53D2 /* DetailsVC.swift in Sources */,
 				4F5C9BDD21D53735006F53D2 /* MapViewModel.swift in Sources */,
 				4F5C9BD921D4EF5C006F53D2 /* FlightNearbyMapper.swift in Sources */,
 				4F5C9BD021D4D93D006F53D2 /* FlightsNearRepository.swift in Sources */,

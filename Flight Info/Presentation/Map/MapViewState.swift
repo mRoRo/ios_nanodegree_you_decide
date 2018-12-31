@@ -10,5 +10,5 @@ enum MapViewState {
     
     case getFlightsStarted
     case getFlightsEnded(flights: [NearFlight])
-    case getFlightsError(message: String)
+    case error(message: String)
 }

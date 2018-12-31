@@ -29,6 +29,7 @@ class FSClientConstants {
         static let Lat = "lat"
         static let Lon = "lon"
         static let Miles = "miles"
+        static let FlightId = "flightId"
     }
     
     // MARK: Flight Status Parameter Keys

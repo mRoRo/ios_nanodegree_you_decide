@@ -10,8 +10,8 @@
 import Foundation
 
 struct FSNearFlightsResponse: Codable {
-    let request: FSRequest?
-    let appendix: FSAppendix?
+    let request: FSNearFlightsRequest?
+    let appendix: FSNearFlightsAppendix?
     let flights: [FSFlight]?
     
     enum CodingKeys: String, CodingKey {
@@ -20,7 +20,7 @@ struct FSNearFlightsResponse: Codable {
     }
 }
 
-struct FSAppendix: Codable {
+struct FSNearFlightsAppendix: Codable {
 }
 
 struct FSFlight: Codable {
@@ -47,7 +47,7 @@ enum FSSource: String, Codable {
     case derived = "derived"
 }
 
-struct FSRequest: Codable {
+struct FSNearFlightsRequest: Codable {
     let latitude, longitude, radiusMiles, maxFlights: FSRequestedItem?
     let extendedOptions: FSAppendix?
     let url: String?
