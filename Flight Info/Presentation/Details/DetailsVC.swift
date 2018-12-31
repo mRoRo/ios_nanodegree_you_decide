@@ -15,6 +15,11 @@ class DetailsVC: UIViewController, AlertPresenter, ActivityIndicatorPresenter {
     @IBOutlet var airlineLabel: UILabel!
     @IBOutlet var departureAirportLabel: UILabel!
     @IBOutlet var arrivalAirportLabel: UILabel!
+    
+    @IBOutlet var datesLabel: UILabel!
+    @IBOutlet var departureDateLabel: UILabel!
+    @IBOutlet var arrivalDateLabel: UILabel!
+    
     @IBOutlet var delaysLabel: UILabel!
     @IBOutlet var departureGateDelayLabel: UILabel!
     @IBOutlet var departureRunwayDelayLabel: UILabel!
@@ -78,6 +83,8 @@ class DetailsVC: UIViewController, AlertPresenter, ActivityIndicatorPresenter {
         let arrivalGateDelayString = NSLocalizedString("arrival_gate_delay", comment: "arrival_gate_delay")
         let deptRunwayDelayString = NSLocalizedString("departure_runway_delay", comment: "departure_runway_delay")
         let arrivalRunwayDelayString = NSLocalizedString("arrival_runway_delay", comment: "arrival_runway_delay")
+        let arrivalDateString = NSLocalizedString("arrival_date", comment: "arrival_date").capitalized
+        let departureDateString = NSLocalizedString("departure_date", comment: "departure_date").capitalized
         
         
         let statusString = NSLocalizedString(String(describing: flightTrack.status), comment: String(describing: flightTrack.status)).capitalized
@@ -88,6 +95,10 @@ class DetailsVC: UIViewController, AlertPresenter, ActivityIndicatorPresenter {
         departureAirportLabel.text = String(format: "%@: %@", deptAirportString.capitalized, flightTrack.departureAirport)
         arrivalAirportLabel.text = String(format: "%@: %@", arrivalAirportString.capitalized, flightTrack.arrivalAirport)
         
+        departureDateLabel.text = String(format: "%@: %@", departureDateString.capitalized, flightTrack.departureDate ?? "-")
+        
+        arrivalDateLabel.text = String(format: "%@: %@", arrivalDateString.capitalized, flightTrack.arrivalDate ?? "-")
+        
         departureGateDelayLabel.text = String(format: "%@: %@", deptGateDelayString.capitalized, flightTrack.departureGateDelayMinutes ?? "-")
         arrivalGateDelayLabel.text = String(format: "%@: %@", arrivalGateDelayString.capitalized, flightTrack.arrivalGateDelayMinutes ?? "-")
         departureRunwayDelayLabel.text = String(format: "%@: %@", deptRunwayDelayString.capitalized, flightTrack.departureRunwayDelayMinutes ?? "-")
@@ -96,8 +107,8 @@ class DetailsVC: UIViewController, AlertPresenter, ActivityIndicatorPresenter {
     
     private func style() {
         title = StringUtils.capitalizeFirstChar(NSLocalizedString("details_view_title", comment: "details_view_title"))
+        datesLabel.text = NSLocalizedString("dates", comment: "dates").capitalized
         delaysLabel.text = NSLocalizedString("delays", comment: "delays").capitalized
-        let flightnameString = NSLocalizedString("flight_name", comment: "flight_name")
-        flightNameLabel.text = String(format: "%@: %@", flightnameString.capitalized, flightName ?? "-")
+        flightNameLabel.text = flightName ?? "-"
     }
 }

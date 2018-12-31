@@ -43,6 +43,8 @@
 		4F5C9C0021D7DEC2006F53D2 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BFF21D7DEC2006F53D2 /* DetailsViewModel.swift */; };
 		4F5C9C0221D7DED7006F53D2 /* DetailsViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */; };
 		4F5C9C0821D9ADA1006F53D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F5C9C0A21D9ADA1006F53D2 /* Localizable.strings */; };
+		4F5C9C1121DA5D2B006F53D2 /* Flights.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9C0F21DA5D2B006F53D2 /* Flights.xcdatamodeld */; };
+		4F5C9C1421DA64DB006F53D2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9C1321DA64DB006F53D2 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		4F5C9BFF21D7DEC2006F53D2 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewState.swift; sourceTree = "<group>"; };
 		4F5C9C0921D9ADA1006F53D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F5C9C1021DA5D2B006F53D2 /* Flights.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flights.xcdatamodel; sourceTree = "<group>"; };
+		4F5C9C1321DA64DB006F53D2 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		55A18236EE048A35C2447143 /* Pods-Flight Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Info.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flight Info/Pods-Flight Info.debug.xcconfig"; sourceTree = "<group>"; };
 		602836116C1DE8BAC441AE6E /* Pods-Flight Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Info.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flight Info/Pods-Flight Info.release.xcconfig"; sourceTree = "<group>"; };
 		DA844A8B84CEC5B330D02E8B /* Pods_Flight_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flight_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +149,7 @@
 		4F5C9BB621D26239006F53D2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4F5C9C0B21DA5CC6006F53D2 /* Local */,
 				4F5C9BD721D4EF3D006F53D2 /* Mappers */,
 				4F5C9BD121D4D9CE006F53D2 /* Cache */,
 				4F5C9BC421D44D39006F53D2 /* Entities */,
@@ -313,6 +318,23 @@
 			path = Texts;
 			sourceTree = "<group>";
 		};
+		4F5C9C0B21DA5CC6006F53D2 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				4F5C9C1221DA61B9006F53D2 /* New Group */,
+				4F5C9C0F21DA5D2B006F53D2 /* Flights.xcdatamodeld */,
+				4F5C9C1321DA64DB006F53D2 /* DataController.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		4F5C9C1221DA61B9006F53D2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		ADB1E581A8206B85B4E50511 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +479,7 @@
 				4F5C9BE521D54260006F53D2 /* AlertPresenter.swift in Sources */,
 				4F5C9C0221D7DED7006F53D2 /* DetailsViewState.swift in Sources */,
 				4F5C9BC321D444A7006F53D2 /* FlightsNearDataSource.swift in Sources */,
+				4F5C9C1421DA64DB006F53D2 /* DataController.swift in Sources */,
 				4F5C9BBC21D43CE0006F53D2 /* RequestUtils.swift in Sources */,
 				4F5C9BDF21D537AD006F53D2 /* MapViewState.swift in Sources */,
 				4F5C9C0021D7DEC2006F53D2 /* DetailsViewModel.swift in Sources */,
@@ -470,6 +493,7 @@
 				4F5C9BFD21D7DE9C006F53D2 /* DetailsVC.swift in Sources */,
 				4F5C9BDD21D53735006F53D2 /* MapViewModel.swift in Sources */,
 				4F5C9BD921D4EF5C006F53D2 /* FlightNearbyMapper.swift in Sources */,
+				4F5C9C1121DA5D2B006F53D2 /* Flights.xcdatamodeld in Sources */,
 				4F5C9BD021D4D93D006F53D2 /* FlightsNearRepository.swift in Sources */,
 				4F5C9BD621D4ECEA006F53D2 /* NearFlight.swift in Sources */,
 			);
@@ -681,6 +705,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F5C9C0F21DA5D2B006F53D2 /* Flights.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F5C9C1021DA5D2B006F53D2 /* Flights.xcdatamodel */,
+			);
+			currentVersion = 4F5C9C1021DA5D2B006F53D2 /* Flights.xcdatamodel */;
+			path = Flights.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4F5C9B9921D14A16006F53D2 /* Project object */;
 }

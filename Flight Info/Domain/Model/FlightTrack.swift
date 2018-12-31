@@ -24,6 +24,8 @@ struct FlightTrack {
     let departureAirport: String
     let arrivalAirport: String
     let airline: String
+    let departureDate: String?
+    let arrivalDate: String?
     let departureGateDelayMinutes: String?
     let departureRunwayDelayMinutes: String?
     let arrivalGateDelayMinutes: String?

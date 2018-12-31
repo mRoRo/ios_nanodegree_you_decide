@@ -84,7 +84,20 @@ class FlightTrackMapper {
             }
         }
         
-        return FlightTrack(id: id, name: name, status: flightStatus, departureAirport: deptAirportString, arrivalAirport: arrivalAirportString, airline: airlineString, departureGateDelayMinutes: departureGateDelayMinutes,
+        // departure and arrival dates
+        let deptDate = fsFlightTrack.departureDate?.dateLocal
+        let arrivalDate = fsFlightTrack.arrivalDate?.dateLocal
+        
+        return FlightTrack(
+            id: id,
+            name: name,
+            status: flightStatus,
+            departureAirport: deptAirportString,
+            arrivalAirport: arrivalAirportString,
+            airline: airlineString,
+            departureDate: deptDate,
+            arrivalDate: arrivalDate,
+            departureGateDelayMinutes: departureGateDelayMinutes,
             departureRunwayDelayMinutes: departureRunwayDelayMinutes,
             arrivalGateDelayMinutes: arrivalGateDelayMinutes,
             arrivalRunwayDelayMinutes: arrivalRunwayDelayMinutes)

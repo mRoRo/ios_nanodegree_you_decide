@@ -6,7 +6,7 @@
   Copyright © 2018 Maria Rodriguez. All rights reserved.
 */
 
-// flight details details
+// flight details
 "details_view_title" = "flight details";
 "status" = "status";
 "airline" = "airline";
@@ -16,6 +16,11 @@
 "arrival_gate_delay" = "arrival gate delay";
 "departure_runway_delay" = "departure runway delay";
 "arrival_runway_delay" = "arrival runway delay";
+"delays" = "delays";
+"no_delay" = "on time";
+"dates" = "dates";
+"arrival_date" = "arrival date";
+"departure_date" = "departure date";
 
 // flight status
 "active" = "active";
@@ -26,9 +31,7 @@
 "notOperational" = "not operational";
 "redirected" = "redirected";
 "scheduled" = "scheduled";
-"unknown" = "unlnown";
-"delays" = "delays";
-"no_delay" = "on time";
+"unknown" = "unknown";
 
 // button titles
 "ok" = "OK";

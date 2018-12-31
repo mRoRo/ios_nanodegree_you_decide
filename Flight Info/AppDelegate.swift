@@ -12,10 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let dataController = DataController(modelName: "Flights")
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // load dataController and set to MapVC
+        dataController.load()
         return true
     }
 
@@ -39,8 +43,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        saveViewContext()
     }
-
-
+    
+    // MARK: - Core Data stack
+    func saveViewContext() {
+        try? dataController.viewContext.save()
+    }
 }
 

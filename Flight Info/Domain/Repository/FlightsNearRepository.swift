@@ -10,4 +10,5 @@ import RxSwift
 
 protocol FlightsNearRepository {
     func getFlightsNear(lat: Double, lon: Double)  -> Observable<[NearFlight]>
+    func setFlightsNear(flights: [NearFlight])
 }

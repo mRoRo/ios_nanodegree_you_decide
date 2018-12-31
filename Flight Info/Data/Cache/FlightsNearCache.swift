@@ -19,7 +19,17 @@ class FlightsNearCache: FlightsNearRepository {
     func getFlightsNear(lat: Double, lon: Double) -> Observable<[NearFlight]> {
         return dataSource.getFlightsNear(lat:lat, lon:lon)
             .map {entity -> [NearFlight] in
-                return FlightNearbyMapper.getFlights(from: entity)
+                let flights =  FlightNearbyMapper.getFlights(from: entity)
+                self.setFlightsNear(flights:flights)
+                return self.getPersistedFlightsNear()
         }
+    }
+    
+    func setFlightsNear(flights: [NearFlight]) {
+        dataSource.setFlightsNear(flights: flights)
+    }
+    
+    func getPersistedFlightsNear() -> [NearFlight] {
+        return dataSource.getPersistedFlightsNear()
     }
 }
