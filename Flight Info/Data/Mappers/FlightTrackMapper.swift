@@ -63,7 +63,7 @@ class FlightTrackMapper {
         }
             
         // delays
-        let noDelayString = NSLocalizedString("no_delay", comment: "no_delay")
+        let noDelayString = StringUtils.capitalizeFirstChar(NSLocalizedString("no_delay", comment: "no_delay"))
         var departureGateDelayMinutes = noDelayString
         var departureRunwayDelayMinutes = noDelayString
         var arrivalGateDelayMinutes = noDelayString

@@ -42,6 +42,7 @@
 		4F5C9BFD21D7DE9C006F53D2 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BFC21D7DE9C006F53D2 /* DetailsVC.swift */; };
 		4F5C9C0021D7DEC2006F53D2 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9BFF21D7DEC2006F53D2 /* DetailsViewModel.swift */; };
 		4F5C9C0221D7DED7006F53D2 /* DetailsViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */; };
+		4F5C9C0821D9ADA1006F53D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F5C9C0A21D9ADA1006F53D2 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		4F5C9BFC21D7DE9C006F53D2 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		4F5C9BFF21D7DEC2006F53D2 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewState.swift; sourceTree = "<group>"; };
+		4F5C9C0921D9ADA1006F53D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55A18236EE048A35C2447143 /* Pods-Flight Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Info.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flight Info/Pods-Flight Info.debug.xcconfig"; sourceTree = "<group>"; };
 		602836116C1DE8BAC441AE6E /* Pods-Flight Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flight Info.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flight Info/Pods-Flight Info.release.xcconfig"; sourceTree = "<group>"; };
 		DA844A8B84CEC5B330D02E8B /* Pods_Flight_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flight_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +258,7 @@
 		4F5C9BDA21D5370A006F53D2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4F5C9C0521D9AD50006F53D2 /* Texts */,
 				4F5C9BFE21D7DEA2006F53D2 /* Details */,
 				4F5C9BE321D54250006F53D2 /* Utils */,
 				4F5C9BDB21D53720006F53D2 /* Map */,
@@ -300,6 +303,14 @@
 				4F5C9C0121D7DED7006F53D2 /* DetailsViewState.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		4F5C9C0521D9AD50006F53D2 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				4F5C9C0A21D9ADA1006F53D2 /* Localizable.strings */,
+			);
+			path = Texts;
 			sourceTree = "<group>";
 		};
 		ADB1E581A8206B85B4E50511 /* Pods */ = {
@@ -372,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F5C9BAF21D14A18006F53D2 /* LaunchScreen.storyboard in Resources */,
+				4F5C9C0821D9ADA1006F53D2 /* Localizable.strings in Resources */,
 				4F5C9BAC21D14A18006F53D2 /* Assets.xcassets in Resources */,
 				4F5C9BAA21D14A16006F53D2 /* Main.storyboard in Resources */,
 			);
@@ -480,6 +492,14 @@
 				4F5C9BAE21D14A18006F53D2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4F5C9C0A21D9ADA1006F53D2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F5C9C0921D9ADA1006F53D2 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

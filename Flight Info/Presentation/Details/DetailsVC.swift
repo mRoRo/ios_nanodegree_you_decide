@@ -95,8 +95,8 @@ class DetailsVC: UIViewController, AlertPresenter, ActivityIndicatorPresenter {
     }
     
     private func style() {
-        title = NSLocalizedString("details_view_title", comment: "details_view_title")
-        delaysLabel.text = NSLocalizedString("delays", comment: "delays")
+        title = StringUtils.capitalizeFirstChar(NSLocalizedString("details_view_title", comment: "details_view_title"))
+        delaysLabel.text = NSLocalizedString("delays", comment: "delays").capitalized
         let flightnameString = NSLocalizedString("flight_name", comment: "flight_name")
         flightNameLabel.text = String(format: "%@: %@", flightnameString.capitalized, flightName ?? "-")
     }

@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  Flight Info
+
+  Created by Maro on 31/12/2018.
+  Copyright © 2018 Maria Rodriguez. All rights reserved.
+*/
+
+// flight details details
+"details_view_title" = "flight details";
+"status" = "status";
+"airline" = "airline";
+"departure_airport" = "departure airport";
+"arrival_airport" = "arrival airport";
+"departure_gate_delay" = "departure gate delay";
+"arrival_gate_delay" = "arrival gate delay";
+"departure_runway_delay" = "departure runway delay";
+"arrival_runway_delay" = "arrival runway delay";
+
+// flight status
+"active" = "active";
+"cancelled" = "cancelled";
+"diverted" = "diverted";
+"dataSourceNeeded" = "data source needed";
+"landed" = "landed";
+"notOperational" = "not operational";
+"redirected" = "redirected";
+"scheduled" = "scheduled";
+"unknown" = "unlnown";
+"delays" = "delays";
+"no_delay" = "on time";
+
+// button titles
+"ok" = "OK";
+
+// map markers
+"ref_location" = "location reference";
+
+// errors
+"server_error" = "data could not be updated. Please try it later";
+
+
+
