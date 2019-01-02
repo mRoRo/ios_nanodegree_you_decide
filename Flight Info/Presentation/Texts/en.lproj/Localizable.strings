@@ -41,6 +41,9 @@
 
 // errors
 "server_error" = "data could not be updated. Please try it later";
+"no_user_location" = "please, long press on the map to select a reference location";
+"no_details" = "no avaible details";
+"no_flights" = "no flights were found";
 
 
 

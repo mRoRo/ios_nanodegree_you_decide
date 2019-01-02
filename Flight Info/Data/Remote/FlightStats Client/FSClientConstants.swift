@@ -38,7 +38,7 @@ class FSClientConstants {
         static let AppKey = "appKey"
     }
     
-    // MARK: Flight Status Parameter Values
+    // MARK: Flight Status Parameter Values ->> ADD YOUR VALUES
     struct ParameterValues {
         static let AppId = ""
         static let AppKey = ""
