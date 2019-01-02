@@ -31,11 +31,13 @@ After executing ‘pod install’, open the `Flight Info.xcworkspace` file that 
 All the flight data is provided by the Flightstats API the app. You'll nedd to add an application ID and an Application Key to use the Flightstats API. Open 
 `FSClientConstants.swift` in Xcode and add them
 
+```
 // MARK: Flight Status Parameter Values ->> ADD YOUR VALUES
 struct ParameterValues {
 static let AppId = ""
 static let AppKey = ""
 }
+```
 
 ## Resources
 This app uses the following frameworks and APIs:
