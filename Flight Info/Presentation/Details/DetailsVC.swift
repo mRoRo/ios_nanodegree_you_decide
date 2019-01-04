@@ -88,21 +88,25 @@ class DetailsVC: UIViewController, AlertPresenter, ActivityIndicatorPresenter {
         
         
         let statusString = NSLocalizedString(String(describing: flightTrack.status), comment: String(describing: flightTrack.status)).capitalized
-        flightStatusLabel.text = String(format: "%@: %@", flightStatusString.capitalized, statusString)
+        flightStatusLabel.attributedText = String.getUdacityAttributedString(title: flightStatusString.capitalized, value: statusString)
         
-        airlineLabel.text = String(format: "%@: %@", airlineString.capitalized, flightTrack.airline)
+        airlineLabel.attributedText = String.getUdacityAttributedString(title: airlineString.capitalized, value: flightTrack.airline)
         
-        departureAirportLabel.text = String(format: "%@: %@", deptAirportString.capitalized, flightTrack.departureAirport)
-        arrivalAirportLabel.text = String(format: "%@: %@", arrivalAirportString.capitalized, flightTrack.arrivalAirport)
+        departureAirportLabel.attributedText = String.getUdacityAttributedString(title: deptAirportString.capitalized, value: flightTrack.departureAirport)
         
-        departureDateLabel.text = String(format: "%@: %@", departureDateString.capitalized, flightTrack.departureDate ?? "-")
+        arrivalAirportLabel.attributedText = String.getUdacityAttributedString(title: arrivalAirportString.capitalized, value: flightTrack.arrivalAirport)
         
-        arrivalDateLabel.text = String(format: "%@: %@", arrivalDateString.capitalized, flightTrack.arrivalDate ?? "-")
+        departureDateLabel.attributedText = String.getUdacityAttributedString(title: departureDateString.capitalized, value: flightTrack.departureDate ?? "-")
         
-        departureGateDelayLabel.text = String(format: "%@: %@", deptGateDelayString.capitalized, flightTrack.departureGateDelayMinutes ?? "-")
-        arrivalGateDelayLabel.text = String(format: "%@: %@", arrivalGateDelayString.capitalized, flightTrack.arrivalGateDelayMinutes ?? "-")
-        departureRunwayDelayLabel.text = String(format: "%@: %@", deptRunwayDelayString.capitalized, flightTrack.departureRunwayDelayMinutes ?? "-")
-        arrivalRunwayDelayLabel.text = String(format: "%@: %@", arrivalRunwayDelayString.capitalized, flightTrack.arrivalRunwayDelayMinutes ?? "-")
+        arrivalDateLabel.attributedText = String.getUdacityAttributedString(title: arrivalDateString.capitalized, value: flightTrack.arrivalDate ?? "-")
+        
+        departureGateDelayLabel.attributedText = String.getUdacityAttributedString(title: deptGateDelayString.capitalized, value: flightTrack.departureGateDelayMinutes ?? "-")
+
+        arrivalGateDelayLabel.attributedText = String.getUdacityAttributedString(title: arrivalGateDelayString.capitalized, value: flightTrack.arrivalGateDelayMinutes ?? "-")
+
+        departureRunwayDelayLabel.attributedText = String.getUdacityAttributedString(title: deptRunwayDelayString.capitalized, value: flightTrack.departureRunwayDelayMinutes ?? "-")
+
+        arrivalRunwayDelayLabel.attributedText = String.getUdacityAttributedString(title: arrivalRunwayDelayString.capitalized, value: flightTrack.arrivalRunwayDelayMinutes ?? "-")
     }
     
     private func style() {
