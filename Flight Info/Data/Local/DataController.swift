@@ -18,27 +18,6 @@ class DataController {
         return persistentContainer.viewContext
     }
     
-    
-    /*
-     let backgroundContext = persistentContainer.newBackgroundContext()
-     
-     // temporary background context
-     persistentContainer.performBackgroundTask { (context) in
-     doSomeSlowWork()
-     try? context.save()
-     }
-     
-     // perform -> dispatch asynchronously
-     viewContext.perform {
-     doSomeWork()
-     }
-     
-     // performAndWait -> dispatch synchronously
-     viewContext.performAndWait {
-     doSomeWork()
-     }
-     */
-    
     var backgroundContext: NSManagedObjectContext!
     
     // instantiate the persistent container with the name of the data model file
