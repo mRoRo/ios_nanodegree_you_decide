@@ -136,8 +136,11 @@ final class FlightsNearRequest: NSObject, FlightsNearDataSource {
         do {
             try context.save()
         } catch {
-             fatalError("New flight could not be saved: \(error.localizedDescription)")
+             fatalError("New flights could not be saved: \(error.localizedDescription)")
         }
+        #if DEBUG
+        print("Flights and locations have been correctly saved")
+        #endif
     }
 }
 
